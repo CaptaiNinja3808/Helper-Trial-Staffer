@@ -3,7 +3,7 @@ const client = new Discord.Client({ partials: ['MESSAGE','CHANNEL','REACTION']})
 
 //client.login("ODg5MDgzOTU1MDU4NDc1MDM4.YUcF9Q.dz4O3UHuNK_NbcKb9VTYsEYb-dI")
 
-client.login(provess.env.token)
+client.login(process.env.token)
 
 client.on("message", message => {
     if (message.content == "£help") {
